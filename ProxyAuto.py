@@ -9,7 +9,7 @@ import S5Crypto
 
 def Search_ping():
     print("Buscando proxy...")
-    for port in range(1000,1050): # El rango del puerto
+    for port in range(1000,9999): # El rango del puerto
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
         result = sock.connect_ex(('152.206.118.80',port)) # IP o dirección,puerto o poner la variable port para escanear los puertos
 
